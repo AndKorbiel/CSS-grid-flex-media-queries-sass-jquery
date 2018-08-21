@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Another web template based on grid, flex and some media queries with some Sass and jQuery</title>
+<link rel="stylesheet" type="text/css" href="./styles/styles.css"  />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/control.js"></script>
+</script>
+</head>
+
+<body>
+
+<div class="container">
+	<div class="control">
+		 <form>
+		    <fieldset id="f-1">
+		        <legend>Select Your layout</legend>
+
+		        <div>
+		            <input type="radio" id="full" name="n" />
+		            <label for="full">Full width</label>
+		        </div>
+
+		        <div>
+		            <input type="radio" id="one" name="n" />
+		            <label for="one">One sidebar</label>
+		        </div>
+
+		        <div>
+		            <input type="radio" id="both" name="n" />
+		            <label for="both">Both sidebars</label>
+		        </div>
+
+		    </fieldset>
+		</form>
+		<form>
+		    <fieldset id="f-2">
+		        <legend>First sidebar width</legend>
+
+		        <div>
+		            <input type="radio" id="onesix" name="n" />
+		            <label for="full">1/6</label>
+		        </div>
+
+		        <div>
+		            <input type="radio" id="onefourth" name="n" />
+		            <label for="one">1/4</label>
+		        </div>
+
+		        <div>
+		            <input type="radio" id="onethird" name="n" />
+		            <label for="both">1/3</label>
+		        </div>
+
+		    </fieldset>
+		</form>
+		<form>
+		    <fieldset id="f-3">
+		        <legend>First sidebar width</legend>
+
+		        <div>
+		            <input type="radio" id="onesix-a" name="n" />
+		            <label for="full">1/6</label>
+		        </div>
+
+		        <div>
+		            <input type="radio" id="onefourth-a" name="n" />
+		            <label for="one">1/4</label>
+		        </div>
+
+		        <div>
+		            <input type="radio" id="onethird-a" name="n" />
+		            <label for="both">1/3</label>
+		        </div>
+
+		    </fieldset>
+		</form>
+		<form>
+		    <fieldset id="f-4">
+		        <legend>Second sidebar width</legend>
+
+		        <div>
+		            <input type="radio" id="onesix-b" name="n" />
+		            <label for="full">1/6</label>
+		        </div>
+
+		        <div>
+		            <input type="radio" id="onefourth-b" name="n" />
+		            <label for="one">1/4</label>
+		        </div>
+
+		        <div>
+		            <input type="radio" id="onethird-b" name="n" />
+		            <label for="both">1/3</label>
+		        </div>
+
+		    </fieldset>
+		</form>
+	</div>
+
+  <header>
+     <div>Home</div>
+     <div>Another page</div>
+     <div>Yet another page</div>
+     <div>Got to see page</div>
+     <div>Last page</div>
+  </header>
+
+   <aside class="aside">
+
+  	 <div>
+  	 	<h2>Widget #1</h2>
+  	 	<p>Every next aside widget's header has a background darker by 8%, and the font color brighter by 11% </p>
+  	 </div>
+     <div>
+     	<h2>Widget #2</h2>
+  	 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus nec tellus a sollicitudin.</p>	
+     </div>
+     <div>
+     	<h2>Widget #3</h2>
+  	 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus nec tellus a sollicitudin.</p>
+  	 </div>
+  	  <div>
+     	<h2>Widget #4</h2>
+  	 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus nec tellus a sollicitudin.</p>
+  	 </div>
+  	  <div>
+     	<h2>Widget #5</h2>
+  	 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus nec tellus a sollicitudin.</p>
+  	 </div>
+
+  </aside>
+
+  <main>
+  	
+  	<div class="cols">
+ 
+  		<div>
+	  	 	<h2>Widget #1</h2>
+	  	 	<p>orem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus nec tellus a sollicitudin. Donec at pulvinar odio. Aenean condimentum, turpis vel hendrerit porttitor, dolor quam vestibulum lorem, ut accumsan massa mauris sed nisl. Quisque finibus augue velit, quis accumsan felis dignissim quis. Sed ex augue, dictum ut porta eu, tempor sit amet odio.</p>
+  	 	</div>
+
+  	</div>
+
+  	<div class="cols">
+  		<div>
+	  	 	<h2>Widget #1</h2>
+	  	 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus nec tellus a sollicitudin.</p>
+  	 	</div>
+  	 	<div>
+	  	 	<h2>Widget #2</h2>
+	  	 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus nec tellus a sollicitudin.</p>
+  	 	</div>
+  	 	<div>
+	  	 	<h2>Widget #3</h2>
+	  	 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus nec tellus a sollicitudin.</p>
+  	 	</div>
+
+  	</div>
+
+  	<div class="cols">
+  		<div>
+	  	 	<h2>Widget #1</h2>
+	  	 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus nec tellus a sollicitudin.</p>
+  	 	</div>
+  	 	<div>
+	  	 	<h2>Widget #2</h2>
+	  	 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus nec tellus a sollicitudin.</p>
+  	 	</div>
+
+  	</div>
+
+  </main>
+
+  <aside class="other-aside">
+
+  	 <div>
+  	 	<h2>Widget #1</h2>
+  	 	<p>This aside every next widget's header has a hue changed by 20%, and the font color brighter by 5%</p>
+  	 </div>
+     <div>
+     	<h2>Widget #2</h2>
+  	 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus nec tellus a sollicitudin.</p>	
+     </div>
+     <div>
+     	<h2>Widget #3</h2>
+  	 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus nec tellus a sollicitudin.</p>
+  	 </div>
+  	 <div>
+     	<h2>Widget #4</h2>
+  	 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus nec tellus a sollicitudin.</p>
+  	 </div>
+  	 <div>
+     	<h2>Widget #5</h2>
+  	 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus nec tellus a sollicitudin.</p>
+  	 </div>
+
+  </aside>
+
+  <footer>
+  	
+  	 <div>
+  	 	<h2>Widget #1</h2>
+  	 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus nec tellus a sollicitudin. Donec at pulvinar odio. Aenean condimentum, turpis vel hendrerit porttitor, dolor quam vestibulum lorem, ut accumsan massa mauris sed nisl. Quisque finibus augue velit, quis accumsan felis dignissim quis. Sed ex augue, dictum ut porta eu, tempor sit amet odio.
+  	 	</p>
+  	 </div>
+     <div>
+     	<h2>Widget #2</h2>
+  	 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus nec tellus a sollicitudin. Donec at pulvinar odio. Aenean condimentum, turpis vel hendrerit porttitor, dolor quam vestibulum lorem, ut accumsan massa mauris sed nisl. Quisque finibus augue velit, quis accumsan felis dignissim quis. Sed ex augue, dictum ut porta eu, tempor sit amet odio.
+  	 	</p>
+     </div>
+     <div>
+     	<h2>Widget #3</h2>
+  	 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus nec tellus a sollicitudin. Donec at pulvinar odio. Aenean condimentum, turpis vel hendrerit porttitor, dolor quam vestibulum lorem, ut accumsan massa mauris sed nisl. Quisque finibus augue velit, quis accumsan felis dignissim quis. Sed ex augue, dictum ut porta eu, tempor sit amet odio.
+  	 	</p>
+     </div>
+     <div>
+     	<h2>Widget #4</h2>
+  	 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras maximus nec tellus a sollicitudin. Donec at pulvinar odio. Aenean condimentum, turpis vel hendrerit porttitor, dolor quam vestibulum lorem, ut accumsan massa mauris sed nisl. Quisque finibus augue velit, quis accumsan felis dignissim quis. Sed ex augue, dictum ut porta eu, tempor sit amet odio.
+  	 	</p>
+     </div>
+
+  </footer>
+  
+</div>
+
+</body>
+
+</html> 

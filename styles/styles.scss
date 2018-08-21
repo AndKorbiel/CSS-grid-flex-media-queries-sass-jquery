@@ -1,0 +1,148 @@
+// Modules and Variables
+@import "partials/base";
+
+/* Basic grid with 12 columns and 3 rows */
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto auto;
+  max-width: 1220px;
+  margin: 40px auto;
+  font-family: Sans-serif;
+
+  	  .control {
+  	  grid-column: span 12;
+	  padding: 0 20px 5px 20px;
+	  min-height: 40px;
+	  @extend %flex-display;
+	  @include border;
+	  	fieldset {
+	  		float: left;
+	  	}
+	  	#f-2, #f-3, #f-4 {
+	  		display: none;
+	  	}
+  	  }
+
+	  header {
+	  grid-column: span 12;
+	  background: $other-bg-color;
+	  align-items: center; 
+	  padding: 0 20px;
+	  min-height: 40px;
+	  @extend %flex-display;
+	  @include border;
+
+		div {
+		  padding: 5px;
+		  width: auto;
+		  text-align: center;
+		  margin-right: 25px;
+		  color: $main-font-color;
+		  font-size: 15px;
+		  @include trans;
+		  @include hover-color(red);
+
+		  	&:last-child {
+	   			margin-left: auto;
+	    		margin-right: 0;
+			}
+		}
+	}
+
+	main {
+	  grid-column: span 8;
+	  background: white;
+	  align-items: flex-start; 
+	  justify-content: left;
+	  padding: 40px 0px;
+	  @include border;
+	}
+
+	.cols {
+	  align-items: stretch;
+	  margin-bottom: 40px;
+	  @extend %flex-display;
+	  	
+	  	div {
+	 		padding: 0 20px;
+		}
+	} 
+
+	aside {
+	  grid-column: span 2;
+	  background: white;
+	  flex-direction: column;
+	  align-items: center;
+	  padding: 40px 20px;
+	  @etends $flex-display;
+	  @include border;
+
+	  	div {
+		  border-bottom: 1px solid #e3e3e3;
+		  margin-bottom: 1em;
+		  text-align: center;
+		  padding-bottom: 1em;
+		  	&:last-child {
+			  border-bottom: 0;
+			}
+		}
+
+		h2 {
+    		padding: 5px 15px;
+		}
+	}
+
+	aside p, footer p, main p {
+	    font-size: 13px;
+	    color: $main-font-color;
+	    line-height: 1.4em;
+	}
+
+	aside h2, footer h2, main h2 {
+	   font-size: 18px;
+	   font-weight: 300;
+	   text-transform: uppercase;
+	   color: $headers-color;
+	   @include trans;
+	   @include hover-color(black);
+	}
+
+	footer {
+	  grid-column: span 12;
+	  background: $other-bg-color;
+	  align-items: center; 
+	  @extend %flex-display;
+	  @include border;
+
+	  	div {
+		  text-align: center;
+		  padding: 0 20px;
+		}
+	}
+}
+
+/* Responsive stuff */
+@media screen and (max-width: 800px) {
+
+	.container {
+		 main, .aside, .other-aside {   
+	    grid-column: span 12;
+	  }
+	    
+	  header, .cols, .aside, .other-aside, footer {
+	    flex-direction: column;
+	  }
+
+	  header > div:last-child, header div {
+	    margin-right: auto;
+	    margin-left: auto;
+	  }
+
+	  .control {
+	  display: none;
+	  }
+
+	}
+
+}

@@ -1,0 +1,53 @@
+/* Variables */
+$other-bg-color: #ededed;
+$main-font-color: #989898;
+$headers-color: #606060;
+$other-aside-base-color: #b4efdc;
+
+/* Placeholders */
+%flex-display {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Functions */
+$step: 8%;
+
+@for $i from 1 to 10 {
+  aside div:nth-child(#{$i}) h2 {
+    background: darken(#f1f1f1, $i * $step);
+    color: lighten(#525252, $i * 11%);
+  }
+}
+
+@for $i from 1 to 10 {
+  .other-aside div:nth-child(#{$i}) h2 {
+    background: adjust-hue( $other-aside-base-color, $i * 20% );
+    color: lighten(#525252, $i * 5%);
+  }
+}
+
+/* Mixins */ 
+@mixin trans ($time: 1s) {
+    -webkit-transition: $time;
+    -moz-transition: $time;
+    -o-transition: $time;
+    transition: $time;
+}
+
+@mixin hover-color ($color: red) {
+	&:hover{
+       color: $color;
+   }
+}
+
+@mixin border ($width: 1px, $style: solid, $color: $other-bg-color ) {
+	border : {
+		width: $width;
+		style: $style;
+		color: $color;
+	}
+}
