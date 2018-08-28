@@ -187,7 +187,7 @@ aside div:nth-child(9) h2 {
 /* Responsive stuff */
 @media screen and (max-width: 800px) {
   .container main, .container .aside, .container .other-aside {
-    grid-column: span 12; }
+    grid-column: span 12 !important; }
   .container header, .container .cols, .container .aside, .container .other-aside, .container footer {
     flex-direction: column; }
   .container header > div:last-child, .container header div {
