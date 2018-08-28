@@ -75,7 +75,7 @@
 	  flex-direction: column;
 	  align-items: center;
 	  padding: 40px 20px;
-	  @etend $flex-display;
+	  @extend $flex-display;
 	  @include border;
 
 	  	div {
@@ -127,7 +127,7 @@
 
 	.container {
 		 main, .aside, .other-aside {   
-	    grid-column: span 12;
+	    grid-column: span 12 !important; 
 	  }
 	    
 	  header, .cols, .aside, .other-aside, footer {
